@@ -1,20 +1,37 @@
 
 "use strict";
 
-a = 15;
+// a = 15;
 
-console.log(a);
+// console.log(a);
 
-let number = 5;
-const leftBorderWidth = 1;
+// let number = 5;
+// const leftBorderWidth = 1;
 
-number = 10;
-console.log(number);
+// number = 10;
+// console.log(number);
 
-const obj = {
-a: 50
+// const obj = {
+// a: 50
+// };
+// obj.a = 10;
+// console.log(obj);
+
+// let v = `срывшсгырвгша`;
+const numberOffilms = prompt("Сколько фильмов вы посмотрели?", "");
+const personalMovieDB = {
+count: numberOffilms,
+movies: {},
+actors:{},
+genres:[],
+privat: false
 };
-obj.a = 10;
-console.log(obj);
+const a = prompt("Один из последних просмотренных фильмов?", ""),
+      b = prompt("На сколько оцените его?", ""),
+      c = prompt("Один из последних просмотренных фильмов?", ""),
+      d = prompt("На сколько оцените его?", "");
 
-let v = `срывшсгырвгша`;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
